@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Upcomings</title>
+	<link rel="shortcut icon" type="image/png" href="images/fav1.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="swiper.min.css">
+        <link rel="stylesheet" href="upcomings.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+        
+        
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.js"></script>  -->
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+	<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-166294183-1');
+</script>
+</head>
+<body>
+
+     <nav>
+            <div class="menu-wrap">
+                    <input type="checkbox" class="toggler">
+                    <div class="hamburger"><div></div></div>
+                    <div class="menu">
+                        <div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 mt-5 ">
+                                <ul>
+                                    <li ><a class="hover-link" href="/">Home</a></li>
+                                    <li><a class="hover-link" href="/#ourservices">Services</a></li>
+									<li><a class="hover-link" href="/#blog">Blog</a></li>
+
+                                    <li><a class="hover-link" href="/contact">Contact</a></li>
+                                    <li class="nav-item dropdown">
+                                            <a href="#" class="nav-link text-white">Account</a>
+                                            <div class="dropdown pl-md-5">
+                                              <div class="dropdown-content text-center ">
+												  
+												<% if(!currentUser){ %>
+													<a href="/signup">Signup</a>
+													<a href="/login">Login</a>
+												<% }else{ %>
+												  <a href="/profile"><%= currentUser.yourname%></a>
+													<a href="/logout">Logout</a>
+												<% } %>
+                                              </div>
+                                            </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="col-12 col-md-6 nav-logo text-center">
+                                <div class="col-12 footer-logo text-center text-white ">
+                                    <img src="images/ailogo2.png" class="rounded" alt="..." width="150px" height="145px">
+                                    <h2>AiDataRon</h2>
+
+                                </div>
+                                <div class="follow text-white mt-5 d-flex-col justify-content-center align-items-center">
+                                    <h5 class="mt-5 pt-3"><strong>Contact Us </strong></h5>
+                                    <a href="https://www.facebook.com/Aidataron-103710027786096/" class="text-white"><i class="fab fa-facebook"></i></a>
+                                    <a href="http://www.twitter.com/aidataron" class="text-white"><i class="fab fa-twitter"></i></a>
+                                    <a href="http://instagram.com/aidataronofficial" class="text-white"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://wa.me/923138309256" class="text-white"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="https://www.linkedin.com/company/aidataronofficial/" class="text-white"><i class="fab fa-linkedin"></i></a>
+
+                                </div>
+                                
+
+                            </div>
+                            
+                        </div>
+                        </div>
+                    </div>
+
+
+            </div>
+
+            <div class="account">
+                    <li class="nav-item dropdown">
+                            <div class="dropdown">
+                                <button class="btn btn-account">Account</button>
+                              <div class="dropdown-content">
+								  <% if(!currentUser){ %>
+								    <a href="/signup">Signup</a>
+                                    <a href="/login">Login</a>
+								  <% }else{ %>
+								  <a href="/profile"><%= currentUser.yourname%></a>
+								    <a href="/logout">Logout</a>
+								  <% } %>
+                                
+								  
+                              </div>
+                            </div>
+                    </li>
+                    
+            </div>
+
+            
+
+            <div class="nav-brand text-center" >
+                <div class="brand">
+                    <div><a  href="/"><strong>AiDataRon</strong></a></div>
+                    
+
+                </div>
+
+
+            </div>
+
+            
+
+            
+
+    </nav>
+
+<hr><hr>
+<section class="ai">
+        <div class="text-white">
+                <div class="jumbotron mt-2 text-center">
+                        <h1 class="display-3" data-aos="fade-up" data-aos-duration="2000"><strong>Artificial Intelligence</strong></h1>
+                        <p><strong>Ai Is Love</strong></p>
+                          
+                </div>
+                <hr><hr>
+
+                <div class="container">
+                    <h1>What is Ai</h1>
+                    <p>
+                            Artificial intelligence is the simulation of human intelligence processes by machines. These processes include learning reasoning (using rules to reach approximate or definite conclusions) and self-correction. Particular applications of AI include expert systems, speech recognition and machine vision.
+
+                    </p>
+
+                    <hr>
+                    <h2>Our vision</h2>
+                    <p>
+                            Wanted to builds augmented intelligence for the healthcare, insurance, financial services and digital commerce industries. Its technology helps businesses increase customer acquisition and engagement. And our vision also includes to make more and more research on its working.
+                    </p>
+                    <hr>
+                    <h2>
+                        When To launch
+                    </h2>
+                    <p>WORKING!!!</p>
+                </div>
+
+        </div>
+
+</section>
+
+<hr><hr><hr><hr>
+<section class="data-science">
+        <div class="text-white">
+                <div class="jumbotron mt-2 text-center">
+                        <h1 class="display-3" ><strong>Data Science</strong></h1>
+                        <p><strong>Data-science Is future</strong></p>
+                          
+                </div>
+
+                <hr><hr>
+
+                <div class="container">
+                    <h1>WHAT IS DATA SCIENCE?</h1>
+                    <p>
+                            Basically data science is a multi-disciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights from structured and unstructured data. Data science is ultimately using the data in creative ways to generate business value.
+
+                    </p>
+                    <hr><hr>
+                    <h2>OUR VISION AND MISSION?</h2>
+                    <p>
+                            The vision is to greatly expand the capacity to implement data science research, industry collaborations, educational programming, and the availability of cutting-edge computational tools. This is being accomplished by championing education and training opportunities, catalyzing faculty growth, and building relationships with industry, government and community connections. The challenge is to communicate the value data science brings to organizational decision making; demonstrate how methodologies can be applied within and across virtually any sector to better understand and optimize opportunities; and innovate new and better tools to continuously improve how organizations gather, curate, interpret, and utilize data.
+
+                    </p>
+                    <hr><hr>
+                    <h2>
+                        When To launch
+                    </h2>
+                    <p>The timing to launch a center dedicated to data science became ideal when key factors came into alignment: rapidly accelerated interest across virtually every industry domain.So soon we will launch it.</p>
+                </div>
+
+        </div>
+
+</section>
+
+
+<hr><hr><hr><hr>
+<section class="Cyber-Security">
+        <div class="text-white">
+                <div class="jumbotron mt-2 text-center">
+                        <h1 class="display-3"><strong>Cyber-Security</strong></h1>
+                        <p><strong></strong></p>
+                          
+                </div>
+
+                <hr><hr>
+
+                <div class="container">
+                    <h1>WHAT IS CYBER SECURITY?</h1>
+                    <p>
+                            Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks. These cyberattacks are usually aimed at accessing, changing, or destroying sensitive information; extorting money from users; or interrupting normal business processes.
+Implementing effective cybersecurity measures is particularly challenging today because there are more devices than people, and attackers are becoming more innovative.
+
+
+                    </p>
+                    <hr><hr>
+                    <h2>IMPORTANCE OF CYBER SECURITY?</h2>
+                    <p>
+                            The vision is to greatly expand the capacity to implement data science research, industry collaborations, educational programming, and the availability of cutting-edge computational tools. This is being accomplished by championing education and training opportunities, catalyzing faculty growth, and building relationships with industry, government and community connections. The challenge is to communicate the value data science brings to organizational decision making; demonstrate how methodologies can be applied within and across virtually any sector to better understand and optimize opportunities; and innovate new and better tools to continuously improve how organizations gather, curate, interpret, and utilize data.
+
+                    </p>
+                    <hr><hr>
+                    <h2>
+                            VISION
+                    </h2>
+                    <p>We grow as a reputable cyber defense technology lab that produces advanced technology to neutralize, damage and destroy hostile attacks from organized agents.</p>
+
+                    <hr><hr>
+                    <h2>
+                            GOAL
+                    </h2>
+                    <p>Gaining the trust of our clients by convincing them that improving cybernetic security increases their strategic and competitive advantage.</p>
+                </div>
+
+        </div>
+
+</section>
+
+
+<hr><hr><hr><hr>
+<section class="pro-animation">
+        <div class="text-white">
+                <div class="jumbotron mt-2 text-center">
+                        <h1 class="display-3"><strong>Pro Animation</strong></h1>
+                        <p><strong></strong></p>
+                          
+                </div>
+
+                <hr><hr>
+
+                <div class="container">
+                    <h1>WHAT IS PRO ANIMATION  ?</h1>
+                    <p>
+                            includes an integrated "Image Creator" containing a comprehensive selection of drawing and image editing tools. Use it to create and/or edit the items in your figures. ... Create professional high-definition stick figure, cut-out-style or stop-motion animations.
+
+                    </p>
+                    <hr><hr>
+                    <h2>Advantages of Animation</h2>
+                    <ul>
+						<li>Increase audience retention rates </li>
+						<li>Get more quality leads</li>
+						<li>Increase your return rate</li>
+						<li>Improve your credibility</li>
+						<li>Increase the level of engagement</li>
+						<li>Increase customer loyalty</li>
+					</ul>
+                    <hr><hr>
+                    <h2>
+                         Future of Animation
+                    </h2>
+                    <p>The future of animation is quite clear and can introduce new tricks, twists and turns in the entertainment industry to the new era. Animation is the key to augmented reality and virtual reality. If you think these technologies will not mature for decades, think again.
+ Through Animation e-learning have become easier. Students can view the real functionality of organisims, machines and other technology.</p>
+
+                    <hr><hr>
+                </div>
+
+        </div>
+
+</section>
+	
+	
+
+<hr><hr><hr><hr>
+<section class="react">
+        <div class="text-white">
+                <div class="jumbotron mt-2 text-center">
+                        <h1 class="display-3"><strong>React Native</strong></h1>
+                        <p><strong></strong></p>
+                          
+                </div>
+
+                <hr><hr>
+
+                <div class="container">
+                    <h1>WHAT IS React NATIVE ?</h1>
+                    <p>
+						REACT Native helps you create real and exciting mobile apps with the help of JavaScript only, which is supportable for both android and iOS platforms. Just code once, and the REACT Native apps are available for both iOS and Android platforms which helps to save development time. Found a great popularity and also backed by Facebook, REACT Native, has a huge community support today. React Native is built on top of ReactJS which has given a huge competition to the long time favorite, AngularJS. Though there are some similarities and difference between ReactJS and React Native, which are mentioned below: <br><br>
+React Native is a framework that builds a hierarchy of UI components to build the JavaScript code. It has a set of components for both iOS and Android platforms to build a mobile application with native look and feel. ReactJS, on the other hand, is an open source JavaScript library to create user interfaces. However, both React Native and ReactJS are developed by Facebook using the same design principles, except designing interfaces.
+
+                    </p>
+                    <hr><hr>
+                    <h2>Advantages of React Native</h2>
+                    <ul>
+						<li>Known for Optimal Performance</li>
+						<li>Can Reuse the Codes and Pre-Developed Components</li>
+						<li>Large Community of Developers</li>
+						<li>React Native is a Cost Effective Solution</li>
+						<li>Offers More Stable Apps</li>
+						<li>Modular Architecture</li>
+					</ul>
+                    
+
+                    <hr><hr>
+                </div>
+
+        </div>
+
+</section>
+
+
+    <footer >
+        <br><br><br><br><br><br><br>
+        <div class="container-fluid pb-5">
+            <div class="row  pt-5 m-0 text-center">
+                    <div class="col-12 col-md-5 footer-box1 ">
+                        <div class="row">
+                            <div class="col-12 footer-logo text-center text-white">
+                                    <img src="images/ailogo2.png" class="rounded" alt="..." width="150px" height="145px" href="/">
+                                    <h2 href="/" class="pb-3">
+                                        AiDataRon
+                                    </h2>
+                                <p>Perfect Services To Maximize Your Digital Business</p>
+        
+                            </div>
+        
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class=" follow text-white mt-5 d-flex-col justify-content-center align-items-center">
+                                        <h5><strong>Contact us </strong></h5>
+                                        <a href="https://www.facebook.com/Aidataron-103710027786096/"><i class="fab fa-facebook"></i></a>
+                                        <a href="http://www.twitter.com/aidataron"><i class="fab fa-twitter"></i></a>
+                                        <a href="http://instagram.com/aidataronofficial"><i class="fab fa-instagram"></i></a>
+                                        <a href="https://wa.me/923138309256"><i class="fab fa-whatsapp"></i></a>
+                                        <a href="https://www.linkedin.com/company/aidataronofficial/"><i class="fab fa-linkedin"></i></a>
+                                </div>
+        
+                            </div>
+        
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-7 footer-box2 px-5">
+                        <div class="row text-center">
+                                <br><br><br>
+                                <div class="quote-query mt-5 ">
+                                    <div class="container text-center text-white ml-md-2">
+										<a href="https://www.fiverr.com/aidataron?up_rollout=true"><button  class="btn btn-quotequery px-5 py-2">Get a quote</button></a>
+										<a href="/query"><button  class="btn btn-quotequery px-5 py-2">Any Query?</button></a>
+                        
+                                    </div>
+                        
+                                </div>
+                                <br><br><br>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-3">
+                                    <div class="text-white mt-5 d-flex-col justify-content-center align-items-center">
+                                            <!-- <h5><strong>LIBARTUS</strong></h5>
+                                            <p><a href="#">Our Story</a></p>
+                                            <p><a href="#">Careers</a></p> -->
+                                            <p><a href="/ourstory">Our Story</a></p>
+                                     </div>
+
+                            </div>
+							<div class="col-12 col-md-3">
+                                    <div class="text-white mt-5 d-flex-col justify-content-center align-items-center">
+                                            <!-- <h5><strong>LIBARTUS</strong></h5>
+                                            <p><a href="#">Our Story</a></p>
+                                            <p><a href="#">Careers</a></p> -->
+                                            <p><a href="/about">About Us</a></p>
+                                     </div>
+
+                            </div>
+                            <div class="col-12 col-md-3">
+                                    <div class="text-white mt-5 d-flex-col justify-content-center align-items-center">
+                                            <!-- <h5><strong>LIBARTUS</strong></h5>
+                                            <p><a href="#">Our Story</a></p>
+                                            <p><a href="#">Careers</a></p> -->
+                                            <p><a href="/privacypolicy">Privacy Policy</a></p>
+                                     </div>
+
+                            </div>
+                            <div class="col-12 col-md-3">
+                                    <div class="text-white mt-5 d-flex-col justify-content-center align-items-center">
+                                            <!-- <h5><strong>LIBARTUS</strong></h5>
+                                            <p><a href="#">Our Story</a></p>
+                                            <p><a href="#">Careers</a></p> -->
+                                            <p><a href="/copyright">Copyrights Policy</a></p>
+                                     </div>
+
+                            </div>
+                            <div class="col-12 col-md-3">
+                                    
+
+                            </div>
+            
+                        </div>
+                    </div>
+        
+                </div>
+
+        </div>
+      <br><br><br><br>  
+    </footer>
+        
+
+
+        
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    
+    
+
+          
+    <script type="text/javascript" src="upcomings.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/js/swiper.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+</body>
+</html>

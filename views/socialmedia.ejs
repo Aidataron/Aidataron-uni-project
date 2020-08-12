@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Digital Marketing</title>
+	<link rel="shortcut icon" type="image/png" href="images/fav1.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="swiper/swiper.min.css">
+        <link rel="stylesheet" href="socialmedia.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+        
+        
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.js"></script>  -->
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+	
+	<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div class="elfsight-app-26028bbb-d02d-449f-a0af-1fe21cd667c5"></div>
+	
+	<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-166294183-1');
+</script>
+	
+	<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '193121161507671');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=193121161507671&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+</head>
+<body>
+
+   <nav>
+            <div class="menu-wrap">
+                    <input type="checkbox" class="toggler">
+                    <div class="hamburger"><div></div></div>
+                    <div class="menu">
+                        <div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 mt-5 ">
+                                <ul>
+                                    <li ><a class="hover-link" href="/">Home</a></li>
+									<li><a class="hover-link" href="/#ourservices">Services</a></li>
+									<li><a class="hover-link" href="/portfolio">Portfolio</a></li>
+                                    <li ><a class="hover-link" href="https://www.fiverr.com/aidataron?up_rollout=true">Get a Quote</a></li>
+                                    <li class="nav-item dropdown">
+                                            <a href="#" class="nav-link text-white">Account</a>
+                                            <div class="dropdown pl-md-5">
+                                              <div class="dropdown-content text-center ">
+												  
+												<% if(!currentUser){ %>
+													<a href="/signup">Signup</a>
+													<a href="/login">Login</a>
+												<% }else{ %>
+												  <a href="/profile"><%= currentUser.yourname%></a>
+													<a href="/logout">Logout</a>
+												<% } %>
+                                              </div>
+                                            </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="col-12 col-md-6 nav-logo text-center">
+                                <div class="col-12 footer-logo text-center text-white ">
+                                    <img src="images/ailogo2.png" class="rounded" alt="..." width="150px" height="145px">
+                                    <h2 id = "aidataron">AiDataRon</h2>
+
+                                </div>
+                                <div class="follow text-white mt-5 d-flex-col justify-content-center align-items-center">
+                                    <h5 class="mt-5 pt-3"><strong>Contact Us </strong></h5>
+                                    <a href="https://www.facebook.com/Aidataron-103710027786096/" class="text-white"><i class="fab fa-facebook"></i></a>
+                                    <a href="http://www.twitter.com/aidataron" class="text-white"><i class="fab fa-twitter"></i></a>
+                                    <a href="http://instagram.com/aidataronofficial" class="text-white"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://wa.me/923138309256" class="text-white" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="https://www.linkedin.com/company/aidataronofficial/" class="text-white" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+                                </div>
+                                
+
+                            </div>
+                            
+                        </div>
+                        </div>
+                    </div>
+
+
+            </div>
+
+            <div class="account">
+                    <li class="nav-item dropdown">
+                            <div class="dropdown">
+                                <button class="btn btn-account">Account</button>
+                              <div class="dropdown-content">
+								  <% if(!currentUser){ %>
+								    <a href="/signup">Signup</a>
+                                    <a href="/login">Login</a>
+								  <% }else{ %>
+								  <a href="/profile"><%= currentUser.yourname%></a>
+								    <a href="/logout">Logout</a>
+								  <% } %>
+                                
+								  
+                              </div>
+                            </div>
+                    </li>
+                    
+            </div>
+
+            
+
+            <div class="nav-brand text-center" >
+                <div class="brand">
+                    <div><a id= "aidataron-brand"  href="/"><strong>AiDataRon</strong></a></div>
+                    
+
+                </div>
+
+
+            </div>
+
+            
+
+            
+
+    </nav>
+
+
+    <section class=" header container-fluid px-0 mt-5">
+        <div class="row align-items-center">
+            <div class="col-12 text-center mb-5">
+                <div class="row justify-content-center">
+                    <!-- <div class="col-1"></div> -->
+                    <div class="col-10 ">
+                        <h1 class="text-white" id="graphic-design" data-aos="fade-up" data-aos-duration="2000" >Digital Marketing.</h1>
+                    </div>
+                    <!-- <div class="col-1"></div> -->
+                    
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <section class="services">
+        <div class="container text-white">
+            <br>
+            <h1 class="text-center" id="we-design">We Market.</h1>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-4 col-lg-3 mb-5">
+                        <div class="box first d-flex-col justify-content-center align-items-center">
+                                <span class="icon-cont">
+                                    <i class="fas fa-ad"></i>
+                    
+                                </span>
+                                <h3>Digital Marketing</h3>
+                                <br>
+                    
+                        </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 mb-5">
+                        <div class="box first">
+                                <span class="icon-cont">
+                                    <i class="fas fa-keyboard"></i>
+                    
+                                </span>
+                                <h3>Creative Writing</h3>
+                                <br>
+                    
+                        </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 mb-5">
+                        <div class="box first">
+                                <span class="icon-cont">
+                                    <i class="fas fa-code"></i>
+                    
+                                </span>
+                                <h3>Web Content Writing</h3>
+                                <br>
+                    
+                        </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 mb-5">
+                        <div class="box first">
+                                <span class="icon-cont">
+                                    <i class="far fa-file-word"></i>
+                    
+                                </span>
+                                <h3>CV Writing</h3>
+                                <br>
+                    
+                        </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 mb-5">
+                        <div class="box first">
+                                <span class="icon-cont">
+                                    <i class="fab fa-twitter"></i>
+                    
+                                </span>
+                                <h3>Accounts Managment</h3>
+                                <br>
+                    
+                        </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 mb-5">
+                        <div class="box first">
+                                <span class="icon-cont">
+                                    <i class="fas fa-blog"></i>
+                    
+                                </span>
+                                <h3>Blogging</h3>
+                                <br>
+                    
+                        </div>
+                </div>
+				<div class="col-12 col-md-4 col-lg-3 mb-5">
+                        <div class="box first">
+                                <span class="icon-cont">
+                                    <i class="fas fa-receipt"></i>
+                    
+                                </span>
+                                <h3>SEO</h3>
+                                <br>
+                    
+                        </div>
+                </div>
+				<div class="col-12 col-md-4 col-lg-3 mb-5">
+                        <div class="box first">
+                                <span class="icon-cont">
+                                    <i class="far fa-hand-pointer"></i>
+                    
+                                </span>
+                                <h3>Pay Per Click Ads</h3>
+                                <br>
+                    
+                        </div>
+                </div>
+                
+
+            </div>
+
+
+        </div>
+
+        <br><br><br>
+        <div class="quote-query mt-5 pb-5">
+            <div class="container text-center">
+               <a href="https://www.fiverr.com/aidataron?up_rollout=true"><button  class="btn btn-quotequery px-5 py-2">Get a quote</button></a>
+                <a href="/query"><button  class="btn btn-quotequery px-5 py-2">Any Query?</button></a>
+    
+            </div>
+    
+        </div>
+        <br><br><br>
+
+    </section>
+
+    <section class="team pt-5">
+
+            <h1 class="display-4 text-center text-white pt-5">Our Team</h1>
+            <hr><hr>
+
+            <div class="container text-white mb-5 pb-5">
+                    <div class="row my-5">
+                        <div class="col-12 col-md-4">
+                            <div class="text-center">
+                                    <img src="images/asadpage1.jpg" alt="facebook marketing expert
+  facebook marketing tips social media marketing agency" class=" rounded-circle  img-fluid p-0">
+                            </div>
+                        </div>
+        
+                        <div class="col-12 col-md-8 pt-lg-5">
+                            <h2 class="mt-5 mt-md-0">Asad Mehmood</h2>
+                            <h4>Digital Media Marketer</h4>
+                            <p>My name is Asad Mahmood. I am a co-founder and certified digital marketing Expert. I can manage your social media platforms Facebook, Instagram, Pinterest, Linkdin and Twitter. Social media marketing importance in the upcoming years was imaginable it was predicted that in 2020 more than 3.5 billion people were using smartphones as their main source of accessing social media. Social media marketing agencies were also creating too many jobs nowadays. Jobs for social media was increased by 30% in the last 2 years.  
+</p>
+        
+                            <div class="row">
+                                <div class="col-12">
+                                        <div class="follow text-white text-lg-right pr-lg-5 mr-lg-5 d-flex-col justify-content-center align-items-center">
+                                                <a href="https://www.facebook.com/asadmahmood540" class="text-white"><i class="fab fa-facebook"></i></a>
+                                                <a href="https://twitter.com/ASADMAHMOOD540?s=08" class="text-white"><i class="fab fa-twitter"></i></a>
+                                                <a href="https://instagram.com/asadmahmood540?igshid=13ik9q0rbiioj" class="text-white"><i class="fab fa-instagram"></i></a>
+                                                <a href="https://www.linkedin.com/in/asad-mahmood-385abb192/?fbclid=IwAR26HFQz_9kDNa7te8oVEB8UKrJlM94ihq5RvVLDYrR1kYIMyV6PzONZ4A4" class="text-white"><i class="fab fa-linkedin"></i></a>
+            
+                                        </div>
+                                </div>
+        
+                            </div>
+        
+                        </div>
+        
+                    </div>
+        
+                    <div class="row my-5">
+                            <div class="col-12 col-md-4">
+                                <div class="text-center">
+                                        <img src="images/kashifpage1.jpg" alt="facebook for marketing tool
+ facebook marketing for small business jobs for social media marketing" class=" rounded-circle  img-fluid p-0">
+                                </div>
+                            </div>
+            
+                            <div class="col-12 col-md-8 pt-lg-5">
+                                <h2 class="mt-5 mt-md-0">Kashif Mehmood</h2>
+                                <h4>Facebook Marketer and WordPress Specialist</h4>
+                                <p>Hi there myself Kashif Mahmood. I am a Facebook marketing expert with 3 years of experience in the related field. I can give you Facebook marketing tips. Facebook marketing for small businesses is very useful to attract potential customers. Facebook for the marketing tool is the best in social media is best as many people in the world are using it. I am currently doing my passionate job at Aidataron from the past 2 years as a senior Facebook marketer.</p>
+                                <div class="row">
+                                        <div class="col-12">
+                                                <div class="follow text-white text-lg-right pr-lg-5 mr-lg-5 d-flex-col justify-content-center align-items-center">
+                                                        <a href="https://www.facebook.com/ikashifmahmood" class="text-white"><i class="fab fa-facebook"></i></a>
+                                                        <a href="https://twitter.com/ikashifmahmood" class="text-white"><i class="fab fa-twitter"></i></a>
+                                                        <a href="http://www.instagram.com/ikashifmahmood" class="text-white"><i class="fab fa-instagram"></i></a>
+
+                                                        <a href="https://www.linkedin.com/in/ikashifmahmood/" class="text-white"><i class="fab fa-linkedin"></i></a>
+                    
+                                                </div>
+                                        </div>
+                
+                                    </div>
+                            </div>
+            
+                    </div>
+				<div class="row my-5">
+                            <div class="col-12 col-md-4">
+                                <div class="text-center">
+                                        <img src="images/awaispage1.jpg" alt="instagram marketing business 
+ social media industry
+" class=" rounded-circle  img-fluid p-0">
+                                </div>
+                            </div>
+            
+                            <div class="col-12 col-md-8 pt-lg-5">
+                                <h2 class="mt-5 mt-md-0">Awais Basharat</h2>
+                                <h4>Instagram marketer</h4>
+                                <p>Hi there, Myself Awais Basharat. I have been in the digital marketing field for the last 4 years. Instagram marketing business is the most powerful business in the social media industry. I can also help you with Instagram marketing plans and also in Instagram marketing campaigns to attract the customers potentially. I am pursuing my passion for digital marketing here at Aidataron from the past 1 year as a senior Instagram marketer.</p>
+                                <div class="row">
+                                        <div class="col-12">
+                                                <div class="follow text-white text-lg-right pr-lg-5 mr-lg-5 d-flex-col justify-content-center align-items-center">
+                                                        <a href="https://www.facebook.com/mawaisbasharat" class="text-white"><i class="fab fa-facebook"></i></a>
+                                                        <a href="https://twitter.com/IAwaisBasharat1" class="text-white"><i class="fab fa-twitter"></i></a>
+                                                        <a href="https://www.instagram.com/mawaisbasharat/" class="text-white"><i class="fab fa-instagram"></i></a>
+
+                                                        <a href="https://www.linkedin.com/in/m-awais-basharat-bb0374199/" class="text-white"><i class="fab fa-linkedin"></i></a>
+                    
+                                                </div>
+                                        </div>
+                
+                                    </div>
+                            </div>
+            
+                    </div>
+                </div>
+    </section>
+
+
+
+    <footer >
+        <br><br><br><br><br><br><br>
+        <div class="container-fluid pb-5">
+            <div class="row  pt-5 m-0 text-center">
+                    <div class="col-12 col-md-5 footer-box1 ">
+                        <div class="row">
+                            <div class="col-12 footer-logo text-center text-white">
+                                    <img src="images/ailogo2.png" class="rounded" alt="..." width="150px" height="145px" href="/">
+                                    <h2 href="/" class="pb-3">
+                                        AiDataRon
+                                    </h2>
+                                <p>Perfect Services To Maximize Your Digital Business</p>
+        
+                            </div>
+        
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class=" follow text-white mt-5 d-flex-col justify-content-center align-items-center">
+                                        <h5><strong>Contact us </strong></h5>
+                                        <a href="https://www.facebook.com/Aidataron-103710027786096/"><i class="fab fa-facebook"></i></a>
+                                        <a href="http://www.twitter.com/aidataron"><i class="fab fa-twitter"></i></a>
+                                        <a href="http://instagram.com/aidataronofficial"><i class="fab fa-instagram"></i></a>
+                                        <a href="https://wa.me/923138309256"><i class="fab fa-whatsapp"></i></a>
+                                        <a href="https://www.linkedin.com/company/aidataronofficial/"><i class="fab fa-linkedin"></i></a>
+                                </div>
+        
+                            </div>
+        
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-7 footer-box2 px-5">
+                        <div class="row text-center">
+                                <br><br><br>
+                                <div class="quote-query mt-5 ">
+                                    <div class="container text-center text-white ml-md-2">
+										<a href="https://www.fiverr.com/aidataron?up_rollout=true"><button  class="btn btn-quotequery px-5 py-2">Get a quote</button></a>
+										<a href="/query"><button  class="btn btn-quotequery px-5 py-2">Any Query?</button></a>
+                        
+                                    </div>
+                        
+                                </div>
+                                <br><br><br>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-3">
+                                    <div class="text-white mt-5 d-flex-col justify-content-center align-items-center">
+                                            <!-- <h5><strong>LIBARTUS</strong></h5>
+                                            <p><a href="#">Our Story</a></p>
+                                            <p><a href="#">Careers</a></p> -->
+                                            <p><a href="/ourstory">Our Story</a></p>
+                                     </div>
+
+                            </div>
+							<div class="col-12 col-md-3">
+                                    <div class="text-white mt-5 d-flex-col justify-content-center align-items-center">
+                                            <!-- <h5><strong>LIBARTUS</strong></h5>
+                                            <p><a href="#">Our Story</a></p>
+                                            <p><a href="#">Careers</a></p> -->
+                                            <p><a href="/about">About Us</a></p>
+                                     </div>
+
+                            </div>
+                            <div class="col-12 col-md-3">
+                                    <div class="text-white mt-5 d-flex-col justify-content-center align-items-center">
+                                            <!-- <h5><strong>LIBARTUS</strong></h5>
+                                            <p><a href="#">Our Story</a></p>
+                                            <p><a href="#">Careers</a></p> -->
+                                            <p><a href="/privacypolicy">Privacy Policy</a></p>
+                                     </div>
+
+                            </div>
+                            <div class="col-12 col-md-3">
+                                    <div class="text-white mt-5 d-flex-col justify-content-center align-items-center">
+                                            <!-- <h5><strong>LIBARTUS</strong></h5>
+                                            <p><a href="#">Our Story</a></p>
+                                            <p><a href="#">Careers</a></p> -->
+                                            <p><a href="/copyright">Copyrights Policy</a></p>
+                                     </div>
+
+                            </div>
+                            <div class="col-12 col-md-3">
+                                    
+
+                            </div>
+            
+                        </div>
+                    </div>
+        
+                </div>
+
+        </div>
+      <br><br><br><br>  
+    </footer>
+  
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    
+    
+
+          
+    <script type="text/javascript" src="socialmedia.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/js/swiper.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+</body>
+</html>
